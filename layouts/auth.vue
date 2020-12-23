@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="auth-page">
     <Nuxt />
   </div>
 </template>
