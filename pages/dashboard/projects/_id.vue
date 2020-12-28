@@ -17,7 +17,7 @@
           </div>
           <div class="w-1/4 text-right">
             <nuxt-link
-              to="/dashboard/projects/create"
+              to="/dashboard/projects/edit"
               class="bg-green-button hover:bg-green-button text-white font-bold px-4 py-1 rounded inline-flex items-center"
             >
               Edit
