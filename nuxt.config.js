@@ -50,7 +50,7 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: 'http://backer-backend.buildwithangga.id/',
+    baseURL: 'http://backer-backend.buildwithangga.id',
   },
 
   // https://auth.nuxtjs.org/schemes/local
