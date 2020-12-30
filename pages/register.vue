@@ -86,7 +86,30 @@
 
 <script>
 export default {
-    layout: 'auth'
+    layout: 'auth',
+    data() {
+      return {
+        register: {
+          name: '',
+          email: '',
+          occupation: '',
+          password: '',
+        },
+      }
+    },
+    methods: {
+      async userRegister() {
+        try {
+          let response = await this.$axios.post('api/v1/users', this.register)
+          console.log(response.data.data.token)
+          this.$auth
+            .setUserToken(response.data.data.token)
+            .then(() => this.$router.push({ path: '/upload' }))
+        } catch (error) {
+          console.log(error)
+        }
+      }, 
+    },
 }
 </script>
 
