@@ -49,6 +49,37 @@
 
 <script>
 export default {
-    layout: 'auth'
+    layout: 'auth',
+    data() {
+      return {
+        url: '/avatar.jpg',
+        selectedFiles: undefined
+      }
+    },
+    methods: {
+        onFileChange(e) {
+            const file = e.target.files[0]
+            this.url = URL.createObjectURL(file)
+            this.selectedFiles = this.$refs.file.files
+        },
+        async upload(file) {
+            let formData = new formData()
+
+            formData.append('avatar',this.selectedFiles.item(0))
+
+            try {
+                let response = await this.$axios.post('/api/v1/avatars',formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    },
+                })
+                console.log(response)
+
+                this.$router.push({ path: '/register-success' })
+            } catch (error) {
+                console.log(error)
+            }
+        },
+    },
 }
 </script>
