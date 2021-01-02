@@ -13,7 +13,7 @@
         </div>
         <div class="flex justify-between items-center">
           <div class="w-3/4 mr-6">
-            <h3 class="text-2xl text-gray-900 mb-4">Create New Projects</h3>
+            <h3 class="text-2xl text-gray-900 mb-4">Edit Projects</h3>
           </div>
           <div class="w-1/4 text-right">
             <nuxt-link
@@ -40,7 +40,7 @@
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
-                      placeholder="Contoh: Demi Gunpla Demi Istri"
+                      placeholder="Nama campaign kamu"
                     />
                   </div>
                   <div class="w-full md:w-1/2 px-3">
@@ -52,7 +52,7 @@
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="number"
-                      placeholder="Contoh: 200000"
+                      placeholder="Contoh: 20000000"
                     />
                   </div>
                   <div class="w-full px-3">
@@ -76,7 +76,7 @@
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
-                      placeholder="Contoh: Ayam, Nasi Goreng, Piring"
+                      placeholder="Contoh: Mudah, Murah, Mantab"
                     />
                   </div>
                   <div class="w-full px-3">
