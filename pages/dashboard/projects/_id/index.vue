@@ -30,7 +30,7 @@
         <div class="block mb-2">
           <div class="w-full lg:max-w-full lg:flex mb-4">
             <div
-              class="border border-gray-400 bg-white rounded p-8 flex flex-col justify-between leading-normal"
+              class="border w-full border-gray-400 bg-white rounded p-8 flex flex-col justify-between leading-normal"
             >
               <div>
                 <div class="text-gray-900 font-bold text-xl mb-2">
