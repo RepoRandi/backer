@@ -18,7 +18,7 @@
           <div class="w-1/4 text-right">
             <nuxt-link
               to="/dashboard"
-              class="bg-green-button hover:bg-green-button text-white font-bold px-4 py-1 rounded inline-flex items-center"
+              class="bg-green-button hover:bg-orange-500 text-white font-bold px-4 py-1 rounded inline-flex items-center"
             >
               Save
             </nuxt-link>
